@@ -23,7 +23,6 @@ pipeline {
         sh 'cat x.txt'
       }
     }
-  }
   post {
     failure {
       echo 'Pipeline failed'
