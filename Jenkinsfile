@@ -14,6 +14,13 @@ pipeline {
         }
       }
     }
+  stage('Deploy') {
+      steps {
+        sh 'make -C main'
+        echo 'Deployment Successful'
+      }
+    }
+  }
   post {
     failure {
       echo 'Pipeline failed'
