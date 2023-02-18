@@ -16,7 +16,7 @@ pipeline {
     }
   stage('Deploy') {
       steps {
-        sh 'https://bc40-27-7-28-174.in.ngrok.io'
+        sh ''
         echo 'Deployment Successful'
       }
     }
